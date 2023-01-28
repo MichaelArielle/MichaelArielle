@@ -11032,3 +11032,25 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=styles.css.map */
+
+.rsvp-unavailable {
+  animation: pulse 1s ease-in-out infinite;
+  font-size: 3em;
+  text-align: center;
+  color: grey;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: grey;
+  }
+  50% {
+    transform: scale(1.2);
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+    color: grey;
+  }
+}
