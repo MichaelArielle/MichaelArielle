@@ -1,16 +1,16 @@
 var counter = 0;
 var right = 0;
 var questions = [
-    ["Where did Maya and Keshal meet?", "Spring break, Miami - cliché, we know", "At Columbia University, obviously", "Through a friend who set them up - Hi, Friend! You know who you are ;)", "In the one Anthropology class Keshal took while at Columbia. It was called 'Magic, Witchcraft and Religion'. He thought it 'sounded cool'.", "1"],
-    ["How long have they been together?", "6 years", "7 years", "8 years", "An eternity. Seriously, what took them so long?", "4"],
-    ["How long were they in a long distance relationship?", "They were in a long distance relationship??", "3 years", "4 years", "5 years", "4"],
-    ["Where did they get engaged?", "Miami, Florida - where it all began", "Lisbon, Portugal - Maya thought it was a vacation with Keshal's family", "Boston, Massachusetts - on a random Sunday, with Otis Redding on the record player, over brunch", "New York City, New York - it was a full on flash mob", "2"],
-    ["Who is the bride-zilla between the two?", "Keshal", "Maya", "1"],
-    ["What is their preferred term of endearment?", "Boo", "Babe", "Hon", "Dear", "1"],
-    ["Which of these is a nickname Maya has for Keshal?", "Schmoomoo", "Boo Radley", "KP", "Keshal Facial", "All of the above", "5"],
-    ["Which of these is a nickname Keshal has for Maya? ", "Clown", "Ma", "Booface", "Garfield", "All of the above", "5"],
-    ["Over the years, Maya and Keshal have had a lot of adventures together. What <i>haven't</i> they done together?", "Climbed a volcano", "Scuba dived in fresh water caves", "Taken a woodworking class", "Gone to a music festival", "All of the above", "3"]
-];
+    ["Where did Michael & Arielle meet?", "Leeds, England", "Newcastle, Australia", "Saskatchewan, Canada", "Lyons, France", "1"],
+    ["What is Michael & Arielle's favourite Starbucks drink (sorry Australian coffee snobs)?", "Brown sugar oat shaken espresso", "Cappuccino", "Iced chai tea latte", "Pumpkin spice latte", "1"],
+    ["How many states/provinces around the world have Michael & Arielle travelled to?", "3", "15", "10", "7", "3"],
+    ["Where did we get engaged?", "Chilliwack", "East Maitland", "Sydney", "Port Macquarie", "4"],
+    ["Who took one month to unpack after Michael & Arielle's last trip to Australia?", "Michael", "Arielle", "2"],
+    ["What do Michael and Arielle call their cars?", "Wrandy Rangler & Chris", "MJ & Bertha", "Speedy Silver & JJ Jeep", "Nothing, they are cars", "2"],
+    ["What are our middle names?", "Rick & Cindy", "David & Bertha", "Sheila & David", "Sheila & Daniel", "3"],
+    ["What team are Michael and Arielle both on?", "Soccer", "Outrigger", "Cheer", "Cricket", "2"],
+    ["Over the years Michael & Arielle have had a lot of adventures together. Which haven't they done?", "Hiked Mt. Cheam", "Hot air balloon ride over Hunter Valley", "Climbed the Sydney Harbour Bridge", "Skied at Whistler", "4"]
+    ];
 
 $(document).ready(function () {
     $(document).on("click", ".true", function () {
@@ -38,13 +38,13 @@ $(document).ready(function () {
                     var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got all " + right +"/9 right.</strong></br><div class='is-size-5'> Wow! You got them all right! There's no way you're not a stalker. Not that you need it, but scroll down to read the full story!</div></div>").hide();
                 }
                 else if (right >= 7){
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Maya and Keshal... or you're a stalker. Scroll down for the full story!</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Michael and Arielle... or you're a stalker. Scroll down for the full story!</div></div>").hide();
                 }
                 else if (right < 7 && right >= 3){
                     var result = $("<div id='question' class='field is-size-4'><strong class='orange'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> You've got some work to do! Scroll down and read up...</div></div>").hide();
                 }
                 else {
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Maya and Keshal!? Scroll down and take notes...</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Michael and Arielle!? Scroll down and take notes...</div></div>").hide();
                 }
                 $('#couple-20').replaceWith('<div id="couple-20" class="column is-4 is-offset-1"><p class="title is-2 "><span class="rsvp-label">Your Results</span></p></div>');
                 $('#question').replaceWith(result);
