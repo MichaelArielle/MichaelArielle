@@ -7364,16 +7364,17 @@ html.has-navbar-fixed-bottom {
 .navbar-burger {
   cursor: pointer;
   display: block;
-  height: 3rem;
+  height: 5rem; /* MA change */
   position: relative;
-  width: 3rem;
+  width: 5rem; /* MA change */
   margin-left: auto;
 }
 
 .navbar-burger span {
-  background-color: currentColor;
+  /* background-color: currentColor; */
+  background-color: #00b89c; /* this changes the icon colour */
   display: block;
-  height: 1px;
+  height: 3px;
   left: calc(50% - 8px);
   position: absolute;
   -webkit-transform-origin: center;
@@ -7386,7 +7387,7 @@ html.has-navbar-fixed-bottom {
   transition-property: background-color, opacity, transform, -webkit-transform;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  width: 16px;
+  width: /*16px;*/ 20px;
 }
 
 .navbar-burger span:nth-child(1) {
